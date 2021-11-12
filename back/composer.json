@@ -10,7 +10,12 @@
         "psr-4": {
             "PhpTodoList\\": "src/",
             "src\\": "src/",
-            "Config\\": ""
+            "Config\\": "",
+            "src\\Domain\\": [
+                "src/Domain/Errors/",
+                "src/Domain/Nodes/",
+                "src/Domain/Users/"
+            ]
         }
     },
     "authors": [
