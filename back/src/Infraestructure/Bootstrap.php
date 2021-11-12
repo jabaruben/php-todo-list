@@ -44,6 +44,16 @@ class Bootstrap
         }
     }
 
+    public function loadAndMatchRoutes(){
+        $this->loadRoutes();
+        $this->debugAllRoutes();
+        $this->match = $this->router->match();
+    }
+
+    public function matchRoute() {
+        return (!$this->match) ? false : true; 
+    }
+
     public function NL()
     {
         return $this->config::NL;
@@ -145,12 +155,10 @@ class Bootstrap
 
     public function run()
     {
-        $this->loadRoutes();
-        $this->debugAllRoutes();
+        // $this->loadAndMatchRoutes();
         $this->toStringMiddlewares();
-        $this->match = $this->router->match();
         $this->printScreenDebug($this->match);
-        if (!$this->match) {
+        if (!$this->matchRoute()) {
             $this->match = $this->arrConfigRoutes["errors"]["404"];
         }
         $this->debugMatchRoute();

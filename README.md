@@ -13,7 +13,7 @@ He añadido la clausula ORDER BY a la consulta de listado, para facilitar el pos
 
 Me faltaria añadir paginacion y segmentacion de los resultados para organizar mejor la informacion al mostrarla.
 
-Me gustaría mover el requisito de conectarse a base de datos, a un punto de la aplicación que se haya validado la route para saber si es correcta o ha de mostrar un 404, que no necesitaría conectarse a base de datos para nada.
+Me gustaría mover el requisito de conectarse a base de datos, a un punto de la aplicación que se haya validado la route para saber si es correcta o ha de mostrar un 404, que no necesitaría conectarse a base de datos para nada. -> SOLUCIONADO
 
 Primero iniciamos el Backend:
 
