@@ -11,7 +11,9 @@ La base de datos no controla algunos casos, como por ejemplo la inserccion de du
 
 He añadido la clausula ORDER BY a la consulta de listado, para facilitar el post tratamiento de los datos previa respuesta del API. Esto no sería necesario y seria un elemento eliminable si la performance de la query fuese baja.
 
-Me faltaria añadir paginacion y segmentacion de los resultados para organizar mejor la informacion al mostrarla
+Me faltaria añadir paginacion y segmentacion de los resultados para organizar mejor la informacion al mostrarla.
+
+Me gustaría mover el requisito de conectarse a base de datos, a un punto de la aplicación que se haya validado la route para saber si es correcta o ha de mostrar un 404, que no necesitaría conectarse a base de datos para nada.
 
 Primero iniciamos el Backend:
 
