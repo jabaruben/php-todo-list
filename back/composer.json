@@ -1,0 +1,22 @@
+{
+    "name": "jabaruben/php-todo-list",
+    "description": "Pet project with PHP in Backend and HTML5, CSS3 and JavaScript Vanilla in the Frontend",
+    "type": "project",
+    "require": {
+        "psr/http-message": "^1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpTodoList\\": "src/",
+            "src\\": "src/",
+            "Config\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Ruben Carracedo",
+            "email": "jabaruben@gmail.com"
+        }
+    ]
+}
