@@ -13,8 +13,7 @@
             "Config\\": "",
             "src\\Domain\\": [
                 "src/Domain/Errors/",
-                "src/Domain/Nodes/",
-                "src/Domain/Users/"
+                "src/Domain/ToDos/"
             ]
         }
     },
