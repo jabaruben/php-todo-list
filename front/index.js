@@ -1,3 +1,2 @@
-const test = {test: "test"};
-
 import "./components/TodoList.js";
+import "./components/TodoAdd.js";
