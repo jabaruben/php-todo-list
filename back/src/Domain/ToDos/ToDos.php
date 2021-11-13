@@ -39,8 +39,15 @@ class ToDos
 
     public function add(Bootstrap $app, Response $res, ServerRequest $req): Response
     {
+        // echo print_r($req->getParams(), true);
         $todoName = $req->getParam("todoname", null);
         $categories = $req->getParam("categories", null);
+        
+        // BugFix for Content-Type: application/json in fetchAPI in JS not working
+        // Encoding data object to URLEncodedString and using other Content-Type works well.
+        if(gettype($categories) === "string" && $categories !== "" && $categories !== null){
+            $categories = explode(",", $categories);
+        }
         
         $db = $app->getMiddlewareService("db");
 

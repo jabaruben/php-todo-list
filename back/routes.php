@@ -15,6 +15,7 @@ return [
             ['GET', '/todos', 'ToDos:list', 'ListToDos', 'ToDos'],
             ['POST', '/todos', 'ToDos:add', 'AddToDos', 'ToDos'],
             ['DELETE', '/todos/[i:id]', 'ToDos:delete', 'DeleteToDos', 'ToDos'],
+            ['GET', '/todos/delete/[i:id]', 'ToDos:delete', 'DeleteToDosTrampaGet', 'ToDos'],
         ],
     ],
     "errors" => [

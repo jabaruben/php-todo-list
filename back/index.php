@@ -8,8 +8,13 @@ use PhpTodoList\Infraestructure\Bootstrap;
 use PhpTodoList\Infraestructure\Middleware;
 use PhpTodoList\Infraestructure\Database\Mysql\Mysql;
 
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: *");
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+
 error_reporting(E_ALL ^ E_NOTICE);
 ini_set("display_errors", Config::DISPLAY_ERRORS);
+
 
 try {
     $app = new Bootstrap(new Router(), new Middleware(), new Config());
